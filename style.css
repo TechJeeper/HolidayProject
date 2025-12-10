@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap');
-
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: sans-serif;
     margin: 0;
-    background-color: #0a192f;
-    color: #ccd6f6;
+    background-color: #000033;
+    color: #fff;
     text-align: center;
 }
 
@@ -22,10 +20,7 @@ header {
 }
 
 h1 {
-    font-family: 'Mountains of Christmas', cursive;
-    font-size: 3.5em;
-    color: #64ffda;
-    text-shadow: 2px 2px 4px #000000;
+    font-size: 2.5em;
 }
 
 nav {
@@ -41,22 +36,14 @@ nav {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    color: #ccd6f6;
+    color: #fff;
     font-size: 1.2em;
-    transition: transform 0.3s ease;
-}
-
-.project-link:hover {
-    transform: scale(1.1);
 }
 
 .project-link img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     margin-bottom: 0.5em;
-    border: 3px solid #64ffda;
-    border-radius: 10px;
-    padding: 5px;
 }
 
 .instruction-image {
