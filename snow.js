@@ -5,8 +5,6 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 let snowflakes = [];
-const snowflakeImage = new Image();
-snowflakeImage.src = 'Star.png';
 
 let mouse = {
     x: null,
@@ -30,9 +28,12 @@ function createSnowflakes() {
 
 function drawSnowflakes() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = 'white';
     for (let i = 0; i < snowflakes.length; i++) {
         const snowflake = snowflakes[i];
-        ctx.drawImage(snowflakeImage, snowflake.x, snowflake.y, snowflake.radius * 2, snowflake.radius * 2);
+        ctx.beginPath();
+        ctx.arc(snowflake.x, snowflake.y, snowflake.radius, 0, Math.PI * 2);
+        ctx.fill();
     }
 }
 
